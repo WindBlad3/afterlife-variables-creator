@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "094090da-7ce0-4a2c-b155-8bcaa3461086",
+		"name": "Afterlife Variables Creator API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26784985"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/afterlife-variables-creator/execute",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "repositories_to_marker",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/afterlife-variables-creator/execute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"afterlife-variables-creator",
+						"execute"
+					]
+				},
+				"description": "### Update Marker Execution\n\nThis endpoint allows you to update marker execution using an HTTP POST request.\n\n#### Request Body\n\nThe request should include a form-data body with the following parameter:\n\n- repositories_to_marker (file): This parameter represents the file to be used for the repositories marker execution.\n    \n\n#### Response\n\nUpon successful execution, the response will have a status code of 200 and a content type of text/xml."
+			},
+			"response": []
+		}
+	]
+}
